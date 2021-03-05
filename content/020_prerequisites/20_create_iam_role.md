@@ -14,4 +14,4 @@ Starting from here, when you see command to be entered such as below, you will e
 2. Confirm that **AWS service** and **EC2** are selected, then click **Next: Permissions** to view permissions.
 3. Confirm that **AdministratorAccess** is checked, then click **Next: Tags**, then **Next: Review** to review.
 4. Enter `Harness-Workshop-Admin` for the Role name, and select **Create role**
-   <img src=/images/10_prerequisites/iamRole.gif width="75%" height="57%">
+   <img src=/images/20_prerequisites/iamRole.gif width="75%" height="57%">

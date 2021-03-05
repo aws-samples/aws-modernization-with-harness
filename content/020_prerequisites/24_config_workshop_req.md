@@ -17,7 +17,7 @@ the EKS IAM authentication, so we will disable it and rely on the IAM role inste
 
 3. Close the Preferences tab
 
-   <img src=/images/10_prerequisites/iamRoleWorkspace.gif width="100%" >
+   <img src=/images/20_prerequisites/iamRoleWorkspace.gif width="100%" >
 
 4. Copy and run (paste with **Ctrl+P**) the commands below.
 

@@ -28,8 +28,8 @@ We will use Amazon Cloud9 to access our AWS account via the AWS CLI in this Work
 
 6 . Leave all the other settings as default and click **Next step** followed by **Create environment**
 
-<!-- ![Deploy Cloud9](/images/10_prerequisites/cloud9.gif) -->
-<img src=/images/10_prerequisites/cloud9.gif width="75%" height="57%">
+<!-- ![Deploy Cloud9](/images/20_prerequisites/cloud9.gif) -->
+<img src=/images/20_prerequisites/cloud9.gif width="75%" height="57%">
 
 {{% notice info %}}
 This will take about 1-2 minutes to provision
@@ -47,7 +47,7 @@ When the environment comes up, customize the environment by:
 
 4 . Hide the left hand environment explorer by clicking on the left side **environment** tab.
 
-<img src=/images/10_prerequisites/cloud9config.gif width="75%" height="57%">
+<img src=/images/20_prerequisites/cloud9config.gif width="75%" height="57%">
 
 {{% notice tip %}}
 If you don't like this dark theme, you can change it from the **View / Themes** Cloud9 workspace menu.
