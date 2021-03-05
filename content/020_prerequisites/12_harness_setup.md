@@ -1,8 +1,7 @@
 ---
-title: "Initial Harness Setup"
-chapter: true
+title: "1. Harness Set-up"
+chapter: false
 weight: 10
-draft: false
 ---
 
 # Initial Harness Setup

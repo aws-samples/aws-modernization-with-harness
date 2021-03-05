@@ -10,7 +10,8 @@ weight: 20
 In this step will be deploying the Kubernetes Metrics Server in EKS and Prometheus on the EKS Cluster.
 Kubernetes Metrics Server
 Installing the Metrics Server can be done in one kubectl command. 
-kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+
+`kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml`
 
 ![kubctl apply metrics server](../images/images/install_metrics_server.png)
 
