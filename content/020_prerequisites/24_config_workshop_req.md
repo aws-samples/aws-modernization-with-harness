@@ -4,7 +4,7 @@ chapter: false
 weight: 13
 ---
 
-## Configure workspace for Sysdig Workshop
+## Configure workspace for Harness Workshop
 
 {{% notice info %}}
 Cloud9 normally manages IAM credentials dynamically. This isn't currently compatible with
@@ -58,7 +58,7 @@ aws configure set default.region ${AWS_REGION}
 aws configure get default.region
 
 # Validate that our IAM role is valid.
-aws sts get-caller-identity --query Arn | grep Sysdig-Workshop-Admin -q && echo "IAM role valid" || echo "IAM role NOT valid"
+aws sts get-caller-identity --query Arn | grep Harness-Workshop-Admin -q && echo "IAM role valid" || echo "IAM role NOT valid"
 ```
 
 {{% notice warning %}}

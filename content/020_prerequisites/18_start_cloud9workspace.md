@@ -22,7 +22,7 @@ We will use Amazon Cloud9 to access our AWS account via the AWS CLI in this Work
 
 3 . Click the **Create environment** button
 
-4 . For the name use `sysdig-workshop`, then click **Next step**
+4 . For the name use `harness-workshop`, then click **Next step**
 
 5 . Select the default instance type **t3.medium**
 

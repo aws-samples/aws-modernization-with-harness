@@ -10,7 +10,7 @@ There are a few prerequisite tasks you must perform before getting started on th
 
 1. Access an AWS account
 2. Launch Cloud9 IDE Workspace
-3. Sign-up for a Sysdig Trial account
+3. Sign-up for a Harness Trial account
 
 We will step through each of these in turn.
 
