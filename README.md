@@ -1,17 +1,24 @@
-## My Project
 
-TODO: Fill this README out!
+# AWSWorkshop.io Workshop - Harness
 
-Be sure to:
+This is the repository to geneate the AWS/Harness Workshop from and execute with Hugo.
 
-* Change the title in this README
-* Edit your repository description on GitHub
+## To Execute.
+Hugo is leveraged as the site generator. https://gohugo.io/about/what-is-hugo/
 
-## Security
+```
+#Clone Repo
+gh repo clone ravilach/aws-modernization-harness
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+#Install Hugo
+brew install hugo
 
-## License
+#Execute Hugo on Root of Local Clone Repo
+hugo server
+```
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
+With the local Hugo server running, head to http://localhost:1313
 
+Cheers!
+
+-Harness Team
