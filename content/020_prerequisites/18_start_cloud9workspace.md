@@ -1,8 +1,10 @@
 ---
-title: "4.1 Create a Workspace"
-chapter: false
+title: "3.1 Create a Workspace"
+chapter: true
 weight: 13
 ---
+
+# Create a Workspace
 
 [AWS Cloud9](https://aws.amazon.com/cloud9/) is a cloud-based integrated development environment (IDE) that Let’s you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes prepackaged with essential tools for popular programming languages, including JavaScript, Python, PHP, and more, so you don’t need to install files or configure your laptop for this workshop.
 

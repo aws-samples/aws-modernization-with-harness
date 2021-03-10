@@ -1,10 +1,10 @@
 ---
-title: "4.4 Configure workshop specific requirements"
-chapter: false
-weight: 13
+title: "3.4 Configure workshop specific requirements"
+chapter: true
+weight: 14
 ---
 
-## Configure workspace for Harness Workshop
+# Configure workspace for Harness Workshop
 
 {{% notice info %}}
 Cloud9 normally manages IAM credentials dynamically. This isn't currently compatible with

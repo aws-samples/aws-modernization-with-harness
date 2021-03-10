@@ -1,10 +1,10 @@
 ---
-title: "4.2 Create IAM role"
-chapter: false
+title: "3.2 Create IAM role"
+chapter: true
 weight: 13
 ---
 
-## Create an IAM role for your workspace
+# Create an IAM role for your workspace
 
 {{% notice info %}}
 Starting from here, when you see command to be entered such as below, you will enter these commands into Cloud9 IDE. You can use the **Copy to clipboard** feature (right hand upper corner) to simply copy and paste into Cloud9. In order to paste, you can use Ctrl + V for Windows or Command + V for Mac.

@@ -1,8 +1,10 @@
 ---
-title: "2. Attending an AWS hosted event"
-chapter: false
+title: "1. Attending an AWS hosted event"
+chapter: true
 weight: 11
 ---
+
+# Attending an AWS hosted event
 
 To complete this workshop, you are provided with an AWS account via the AWS Event Engine service. A team hash will be provided to you by event staff.
 
