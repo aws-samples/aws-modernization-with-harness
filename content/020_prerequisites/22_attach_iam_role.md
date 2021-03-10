@@ -1,10 +1,10 @@
 ---
-title: "4.3 Attach IAM Role"
-chapter: false
+title: "3.3 Attach IAM Role"
+chapter: true
 weight: 13
 ---
 
-## Attach the IAM role to your Workspace
+# Attach the IAM role to your Workspace
 
 1. Follow [this deep link to find your Cloud9 EC2 instance](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:search=aws-cloud9-harness;sort=desc:launchTime)
 
