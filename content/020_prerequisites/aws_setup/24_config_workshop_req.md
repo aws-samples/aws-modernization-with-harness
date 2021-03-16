@@ -1,7 +1,7 @@
 ---
 title: "3.4 Configure workshop specific requirements"
 chapter: true
-weight: 14
+weight: 24
 ---
 
 # Configure workspace for Harness Workshop
