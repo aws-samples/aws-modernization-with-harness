@@ -1,13 +1,12 @@
 ---
-title: "Automated Canary Analysis"
+title: "8.2 Automated Canary"
 chapter: true
 draft: false
-weight: 20
+weight: 30
 ---
+# Automated Canary Analysis 
 
-# Automated Canary Analysis
-
-With all of the CD Abstraction pieces out of the way, now it is time to define the Workflow which will power the canary analysis. 
+With all of the CD Abstraction pieces out of the way, now it is time to define the Workflow which will power the Canary analysis.
 
 Create a new Workflow for the Sample App. 
 
@@ -17,24 +16,24 @@ Create a new Workflow for the Sample App.
 * Workflow Type: Canary Deployment
 * Environment: The EKS Cluster
 
-![Create Sample App Workflow](../images/sample_app_workflow.png)
+![Create Sample App Workflow](/images/sample_app_workflow.png)
 
 Once you hit Submit, can add a canary phase under “Deployment Phases” with + Add Phase
 
-![Sample App Canary](../images/sample_app_canary.png)
+![Sample App Canary](/images/sample_app_canary.png)
 
 
 In the Phase definition, select the Sample App Service and your Infrastructure Definition.
 
-![Sample App Add Workflow Phase](../images/sample_app_workflow_phase.png)
+![Sample App Add Workflow Phase](/images/sample_app_workflow_phase.png)
 
 Once you hit Submit, your Canary Phase will be empty. This step will be filling out the Prometheus Details.
 
-![Sample App Canary phase setup](../images/sample_app_canary_setup.png)
+![Sample App Canary phase setup](/images/sample_app_canary_setup.png)
 
 In the Verify section, click + Add Step. Search for “prom” as a function to add. 
 
-![Add Prometheus Step](../images/sample_app_workflow_cv_step.png)
+![Add Prometheus Step](/images/sample_app_workflow_cv_step.png)
 
 Select Prometheus and then click next. This is where the Prometheus queries will be entered. 
 
@@ -44,7 +43,7 @@ Select Prometheus and then click next. This is where the Prometheus queries will
 * Group Name: custom
 * Query: io_harness_custom_metric_normal_call{kubernetes_pod_name="$hostName"}
 
-![Configure Prometheus CV](../images/sample_app_configure_prometheus.png)
+![Configure Prometheus CV](/images/sample_app_configure_prometheus.png)
 
 Add another metric for Errors with + Add
 
@@ -53,36 +52,36 @@ Add another metric for Errors with + Add
 * Group Name: custom
 * Query: io_harness_custom_metric_error_call{kubernetes_pod_name="$hostName"}
 
-![Configure Prometheus metric](../images/sample_app_configure_prometheus_metric.png)
+![Configure Prometheus metric](/images/sample_app_configure_prometheus_metric.png)
 
 Then set the Analysis Time to 5 mins and Algorithm to Sensitive. 
 
-![Configure Analysis](../images/sample_app_cv_setup.png)
+![Configure Analysis](/images/sample_app_cv_setup.png)
 
 When completed it should look like this. 
 
-![Prometheus Configuration completed](../images/sample_app_configure_prom_complete.png)
+![Prometheus Configuration completed](/images/sample_app_configure_prom_complete.png)
 
 Click Submit and you now have Prometheus added to analyze the canary. 
 
-![Canary Phase Complete](../images/sample_app_workflow_cv.png)
+![Canary Phase Complete](/images/sample_app_workflow_cv.png)
 
 As a good practice, can automate the removal of the resources if the canary should fail. On the right hand side under Rollback Steps, in the Deploy Phase, + Add Step.
 
-![Configure Rollback](../images/sample_app_workflow_rollback.png)
+![Configure Rollback](/images/sample_app_workflow_rollback.png)
 
 Search for Del for the Delete Step.
 
-![Add Delete step to workflow](../images/sample_app_delete_step.png)
+![Add Delete step to workflow](/images/sample_app_delete_step.png)
 
 Select Delete.
 
 * Resources: ${k8s.canaryWorkload}
 
-![Configure Delete Step](../images/sample_app_workflow_configure_del.png)
+![Configure Delete Step](/images/sample_app_workflow_configure_del.png)
 
 Hit Submit and the final canary should look like this. 
 
-![Completed Sample App Workflow](../images/sample_app_workflow_complete.png)
+![Completed Sample App Workflow](/images/sample_app_workflow_complete.png)
 
 Now you are ready to deploy your application.

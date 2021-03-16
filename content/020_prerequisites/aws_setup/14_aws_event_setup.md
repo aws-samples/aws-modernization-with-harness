@@ -1,7 +1,7 @@
 ---
 title: "1. Attending an AWS hosted event"
 chapter: true
-weight: 11
+weight: 14
 ---
 
 # Attending an AWS hosted event
