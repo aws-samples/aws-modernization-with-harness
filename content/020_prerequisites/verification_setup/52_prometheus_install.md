@@ -21,6 +21,7 @@ Once you hit Submit, click on three ellipses on the right hand side to Link Remo
 ![Setup Prometheus Service](/images/prometheus_service_setup.png)
 
 Enter the following information:
+
 * Manifest Format: Kubernetes Specs
 * Source Repository: AWS Workshop
 * Branch: master
