@@ -30,8 +30,7 @@ We will use Amazon Cloud9 to access our AWS account via the AWS CLI in this Work
 
 6 . Leave all the other settings as default and click **Next step** followed by **Create environment**
 
-<!-- ![Deploy Cloud9](/images/20_prerequisites/cloud9.gif) -->
-<img src=/images/20_prerequisites/cloud9.gif width="75%" height="57%">
+<img src=/images/20_prerequisites/c9create.png>
 
 {{% notice info %}}
 This will take about 1-2 minutes to provision
@@ -56,5 +55,5 @@ If you don't like this dark theme, you can change it from the **View / Themes** 
 {{% /notice %}}
 
 {{% notice tip %}}
-Cloud9 requires third-party-cookies. You can whitelist the [specific domains]( https://docs.aws.amazon.com/cloud9/latest/user-guide/troubleshooting.html#troubleshooting-env-loading).  You are having issues with this, Ad blockers, javascript disablers, and tracking blockers should be disabled for the cloud9 domain, or connecting to the workspace might be impacted.
+Cloud9 requires third-party-cookies. You can whitelist the [specific domains](https://docs.aws.amazon.com/cloud9/latest/user-guide/troubleshooting.html#troubleshooting-env-loading).  You are having issues with this, Ad blockers, javascript disablers, and tracking blockers should be disabled for the cloud9 domain, or connecting to the workspace might be impacted.
 {{% /notice %}}
