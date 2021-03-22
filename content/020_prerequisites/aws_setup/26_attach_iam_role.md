@@ -12,7 +12,7 @@ weight: 22
 
 3. Choose **Harness-Workshop-Admin** from the **IAM Role** drop down, and select **Save**
 
-<img src=/images/20_prerequisites/attachIAMRole.gif width="75%" height="57%">
+<img src=/images/20_prerequisites/attachIAMrole.png>
 
 
 
