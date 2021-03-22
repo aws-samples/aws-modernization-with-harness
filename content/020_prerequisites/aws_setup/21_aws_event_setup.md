@@ -6,7 +6,7 @@ weight: 14
 
 # Attending an AWS hosted event
 
-To complete this workshop, you are provided with an AWS account via the AWS Event Engine service. A team hash will be provided to you by event staff.
+To complete this workshop, you will be provided with an AWS account via the AWS Event Engine service. A team hash will be provided to you by event staff.
 
 {{% notice warning %}}
 If you are currently logged in to an AWS Account, you can logout using this [link](https://console.aws.amazon.com/console/logout!doLogout)
@@ -37,5 +37,5 @@ Please select **US East (N.Virginia)** in the top right corner.
 ![Event Engine Region](/images/20_prerequisites/event-engine-region.png)
 
 {{% notice warning %}}
-This account will expire at the end of the workshop and the all the resources created will be automatically deprovision-ed. You will not be able to access this account after today.
+This account will expire at the end of the workshop and  all the resources created will be automatically de-provisioned. You will not be able to access this account after today.
 {{% /notice %}}

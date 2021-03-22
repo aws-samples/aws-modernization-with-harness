@@ -1,8 +1,14 @@
 ---
 title: "Introduction"
-date: 2018-10-03T10:14:32-07:00
-draft: false
-weight: 10
+chapter: true
+weight: 1
 ---
-In this section, we'll cover the following topics:
-{{% children showhidden="false" %}}
+
+# Learning Objectives
+Today we are going to learn the following topics:
+
+- How to deploy Cloud9 as an IDE for completing workshop exercises.
+- How to deploy a sample EKS application to your AWS environment.
+- How to set up Prometheus to monitor your EKS application.
+- How to connect Harness to your EKS application to help deploy changes.
+
