@@ -13,7 +13,7 @@ To create a Harness Application,
 
 **Setup -> Applications + Add Application** 
 
-* Name: AWS Canary Lab
+* **Name:** ***AWS Canary Lab***
 
 ![Add Application](/images/application.png)
 

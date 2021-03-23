@@ -10,9 +10,9 @@ Adding the EKS Cluster to Harness is simple. To create a new [Cloud Provider](ht
 
 **Setup -> Cloud Providers + Add Cloud Provider -> Kubernetes Cluster** 
 
-* Name: My EKS Cluster
-* Cluster Details: Inherit from Selected Delegate
-* Delegate: eks-delegate
+* **Name:** ***My EKS Cluster***
+* **Cluster Details:** ***Inherit from Selected Delegate***
+* **Delegate:** ***eks-delegate***
 
 ![EKS Connector Setup](/images/eks_cluster_cloud_provider.png)
 

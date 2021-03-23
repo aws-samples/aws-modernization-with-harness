@@ -11,8 +11,8 @@ Harness Environments are where you are going to deploy to.
 
 **Setup -> AWS Canary Lab -> Environments + Add Environment**
 
-* Name: The EKS Cluster
-* Type: Non-Production
+* **Name:** ***The EKS Cluster***
+* **Type:** ***Non-Production***
 
 ![Add Environment](/images/eks_environment.png)
 

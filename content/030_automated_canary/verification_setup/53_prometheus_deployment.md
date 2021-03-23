@@ -11,11 +11,11 @@ To deploy something in Harness, defining a Harness Workflow will define the step
 
 **Setup-> AWS Canary Lab -> Workflows + Add Workflow**
 
-* Name: Deploy Prometheus
-* Workflow Type: Rolling Deployment
-* Environment: The EKS Cluster
-* Service: Install Prometheus
-* Infrastructure Definition: My EKS Cluster
+* **Name:** ***Deploy Prometheus***
+* **Workflow Type:** ***Rolling Deployment***
+* **Environment:** ***The EKS Cluster***
+* **Service:** ***Install Prometheus***
+* **Infrastructure Definition:** ***My EKS Cluster***
 
 ![Configure Prometheus Deployment Workflow](/images/prometheus_workflow.png)
 
