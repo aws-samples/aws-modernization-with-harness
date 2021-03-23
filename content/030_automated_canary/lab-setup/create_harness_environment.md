@@ -1,5 +1,5 @@
 ---
-title: "7.3 Create Harness Environment"
+title: "6.3 Create Harness Environment"
 chapter: true
 draft: false
 weight: 40

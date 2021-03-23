@@ -1,5 +1,5 @@
 ---
-title: "5.4 Connecting Prometheus"
+title: "7.4 Connecting Prometheus"
 chapter: true
 draft: false
 weight: 54

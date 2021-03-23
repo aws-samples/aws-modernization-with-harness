@@ -1,5 +1,5 @@
 ---
-title: "6.2 Important Components"
+title: "5.2 Important Components"
 chapter: true
 draft: false
 weight: 30

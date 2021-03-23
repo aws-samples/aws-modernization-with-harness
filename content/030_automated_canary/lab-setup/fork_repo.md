@@ -1,5 +1,5 @@
 ---
-title: "7.1 Fork Workshop Repo"
+title: "6.1 Fork Workshop Repo"
 chapter: true
 draft: false
 weight: 20

@@ -1,5 +1,5 @@
 ---
-title: "5.2 Prometheus Installation"
+title: "7.2 Prometheus Installation"
 chapter: true
 draft: false
 weight: 52

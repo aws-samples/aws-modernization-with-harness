@@ -1,5 +1,5 @@
 ---
-title: "5.3 Prometheus Deployment"
+title: "7.3 Prometheus Deployment"
 chapter: true
 draft: false
 weight: 53

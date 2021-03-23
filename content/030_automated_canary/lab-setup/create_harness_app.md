@@ -1,5 +1,5 @@
 ---
-title: "7.2 Create Harness Application"
+title: "6.2 Create Harness Application"
 chapter: true
 draft: false
 weight: 30

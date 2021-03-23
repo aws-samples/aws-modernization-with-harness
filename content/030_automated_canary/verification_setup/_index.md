@@ -2,7 +2,7 @@
 title: "Verification Setup"
 chapter: true
 draft: false
-weight: 8
+weight: 16
 ---
 
 # Verification Configuration 
