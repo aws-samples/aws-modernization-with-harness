@@ -2,7 +2,7 @@
 title: "Verification Setup"
 chapter: true
 draft: false
-weight: 10
+weight: 16
 ---
 
 # Verification Configuration 
@@ -22,8 +22,3 @@ In this step will be deploying the components necessary to collect and report on
 {{% notice note %}}
 Both tools are free of cost to use, however will use resources in your clusters which in turn can have a cost.  While cost is not a factor for this AWS Workshop, please make sure to consider this when implementing these tools in your own clusters.
 {{% /notice %}}
-
-
-In this section, we'll cover the following topics:
-
-{{% children showhidden="false" %}}

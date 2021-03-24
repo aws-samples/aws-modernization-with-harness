@@ -21,8 +21,8 @@ On the bottom right, click on the “Workflow Variables” pencil icon.
 
 Add a pair of variables. 
 
-* First: verify_canary / Text / yes
-* Second: metric_verification / Text / Prometheus
+* **First:** ***verify_canary / Text / yes***
+* **Second:** ***metric_verification / Text / Prometheus***
 
 ![Add Workflow Variables](/images/workflow_vars_setup.png)
 
@@ -32,8 +32,8 @@ Click Save, and your Workflow should look like this.
 
 The last step is to define what happens after a successful Canay, which would be to promote. Can click on the + Add Phase after the Canary in Deployment Phase. 
 
-* Service: Sample App
-* Infrastructure Definition: My EKS Cluster
+* **Service:** ***Sample App***
+* **Infrastructure Definition:** ***My EKS Cluster***
 
 ![Add Workflow Phase](/images/sample_app_workflow_phase.png)
 
@@ -43,8 +43,8 @@ Once you hit Submit, your Workflow should look like this and you are ready to de
 
 Now you are ready to deploy. Click on Deploy on the top right. 
 
-* Verify_canary: no
-* Artifact Build: Tag # stable 
+* **Verify Canary:** ***no***
+* **Artifact Build:** ***Tag # stable*** 
 
 ![Start new stable deployment](/images/start_new_deployment.png)
 
@@ -56,10 +56,10 @@ Now for the fun, you can deploy another version of the application. This can rep
 
 **Continuous Deployment -> Deployments -> Start New Deployment** 
 
-* Application: AWS Canary Lab
-* Workflow: Sample App Canary
-* Verify_canary: yes
-* Artifact Build: #unstable 
+* **Application:** ***AWS Canary Lab***
+* **Workflow:** ***Sample App Canary***
+* **Verify Canary:** ***yes***
+* **Artifact Build:** ***#unstable***
 
 ![Start new broken deployment](/images/start_new_deployment_broken.png)
 

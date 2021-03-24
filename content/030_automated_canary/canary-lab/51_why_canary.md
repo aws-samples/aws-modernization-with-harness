@@ -1,5 +1,5 @@
 ---
-title: "6.1 Why Canary"
+title: "5.1 Why Canary"
 chapter: true
 draft: false
 weight: 20

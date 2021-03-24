@@ -1,5 +1,5 @@
 ---
-title: "7.3 Create Harness Environment"
+title: "6.3 Create Harness Environment"
 chapter: true
 draft: false
 weight: 40
@@ -11,8 +11,8 @@ Harness Environments are where you are going to deploy to.
 
 **Setup -> AWS Canary Lab -> Environments + Add Environment**
 
-* Name: The EKS Cluster
-* Type: Non-Production
+* **Name:** ***The EKS Cluster***
+* **Type:** ***Non-Production***
 
 ![Add Environment](/images/eks_environment.png)
 

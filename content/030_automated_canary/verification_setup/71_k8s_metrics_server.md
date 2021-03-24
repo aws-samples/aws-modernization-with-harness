@@ -1,5 +1,5 @@
 ---
-title: "5.1 Metrics Server Install"
+title: "7.1 Metrics Server Install"
 chapter: true
 draft: false
 weight: 51

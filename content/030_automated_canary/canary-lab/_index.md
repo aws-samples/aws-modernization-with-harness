@@ -14,9 +14,8 @@ A major drawback to a Canary deployment is how complex it can be because manual 
 After the completion of this workshop you will be able to:
 
 * Explain and implement a canary deployment with Harness
-* Connect your Harness delegate with AWS
-* Deploy a monitoring tool to Harness
 * Create a successful deployment pipeline
+* Roll back from a broken deployment
 
 In this section, we'll cover the following topics:
 

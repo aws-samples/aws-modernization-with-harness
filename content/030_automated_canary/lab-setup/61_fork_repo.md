@@ -1,5 +1,5 @@
 ---
-title: "7.1 Fork Workshop Repo"
+title: "6.1 Fork Workshop Repo"
 chapter: true
 draft: false
 weight: 20
@@ -17,10 +17,10 @@ Adding your newly forked repository will allow for workshop assets to be used in
 
 **Setup -> Connectors -> Source Repo Providers + Add Source Repo Provider**
 
-* Name: AWS Workshop
-* URL: https://github.com/ravilach/harness-canary-workshop (your Forked address)
-* Username: Your User Name
-* Password/Secret: Click Pencil to add your token/pw as a Harness Secret
+* **Name:** ***AWS Workshop***
+* **URL:** ***https://github.com/ravilach/harness-canary-workshop (your Forked address)***
+* **Username:** ***Your User Name***
+* **Password/Secret:** ***Click Pencil to add your token/pw as a Harness Secret***
 
 ![Add Git Connector](/images/aws_git_connector.png)
 

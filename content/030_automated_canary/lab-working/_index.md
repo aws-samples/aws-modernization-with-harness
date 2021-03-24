@@ -2,7 +2,7 @@
 title: "Automating Canary"
 chapter: true
 draft: false
-weight: 16
+weight: 18
 ---
 
 # Automating Canary

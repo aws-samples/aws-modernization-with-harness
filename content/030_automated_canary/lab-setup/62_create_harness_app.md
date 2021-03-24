@@ -1,5 +1,5 @@
 ---
-title: "7.2 Create Harness Application"
+title: "6.2 Create Harness Application"
 chapter: true
 draft: false
 weight: 30
@@ -13,7 +13,7 @@ To create a Harness Application,
 
 **Setup -> Applications + Add Application** 
 
-* Name: AWS Canary Lab
+* **Name:** ***AWS Canary Lab***
 
 ![Add Application](/images/application.png)
 
