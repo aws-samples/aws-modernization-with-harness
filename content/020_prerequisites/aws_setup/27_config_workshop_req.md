@@ -1,5 +1,5 @@
 ---
-title: "3.4 Configure workshop specific requirements"
+title: "3.3 Configure workshop specific requirements"
 chapter: true
 weight: 24
 ---
@@ -16,51 +16,75 @@ the EKS IAM authentication, so we will disable it and rely on the IAM role inste
 2. Select **AWS SETTINGS** and turn off **AWS managed temporary credentials**
 
 3. Close the Preferences tab
+   
+    ![Turn off temp credentials](/images/20_prerequisites/iamRoleWorkspace.gif)
 
-   <img src=/images/20_prerequisites/iamRoleWorkspace.gif width="100%" >
+4. Copy and run (paste with **Ctrl+P** or **CMD+P**) the commands below.
 
-4. Copy and run (paste with **Ctrl+P**) the commands below.
+      Before running it, review what it does by reading through the comments.
 
-   Before running it, review what it does by reading through the comments.
+      ```sh
+      # Update awscli
+      sudo pip install --upgrade awscli && hash -r
+      
+      # Install jq command-line tool for parsing JSON, and bash-completion
+      sudo yum -y install jq gettext bash-completion moreutils
+      
+      # Install yq for yaml processing
+      echo 'yq() {
+      docker run --rm -i -v "${PWD}":/workdir mikefarah/yq yq "$@"
+      }' | tee -a ~/.bashrc && source ~/.bashrc
+      
+      # Verify the binaries are in the path and executable
+      for command in jq aws
+      do
+        which $command &>/dev/null && echo "$command in path" || echo "$command NOT FOUND"
+      done
+      
+      # Remove existing credentials file.
+      rm -vf ${HOME}/.aws/credentials
+      
+      # Set the ACCOUNT_ID and the region to work with our desired region
+      export AWS_REGION=$(curl -s 169.254.169.254/latest/dynamic/instance-identity/document | jq -r '.region')
+      test -n "$AWS_REGION" && echo AWS_REGION is "$AWS_REGION" || echo AWS_REGION is not set
+      
+      # Validate that our IAM role is valid.
+      aws sts get-caller-identity --query Arn | grep BastionRole -q && echo "IAM role valid" || echo "IAM role NOT valid"
+      ```
 
+      {{% notice warning %}}
+   If the IAM role is not valid, <span style="color: red;">**DO NOT PROCEED**</span>. Go back and confirm the steps on this page.
+   {{% /notice %}}
+   
+5. Now we'll start installing kubectl and set up our Cloud9 instance to be to connect to the pre-provisioned EKS cluster 
+   
+      Copy and run (paste with **Ctrl+P** or **CMD+P**) the commands below.
 
-```sh
-# Update awscli
-sudo pip install --upgrade awscli && hash -r
+      Before running it, review what it does by reading through the comments.
 
-# Install jq command-line tool for parsing JSON, and bash-completion
-sudo yum -y install jq gettext bash-completion moreutils
+      ```sh
+      # Verify there is an EKS cluster already provisioned, the EKS cluster's name is basic-eks
+      aws eks list-clusters --region us-east-1
+      
+      # Install kubectl binary
+      curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl
+      
+      # Apply permission to execute binary
+      chmod +x ./kubectl
+      
+      # Copy binary to PATH, which allows you to write kubectl commands in any folder 
+      mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$HOME/bin:$PATH
+      
+      #Verify kubectl is installed and can be executed
+      kubectl version
+      
+      # Update the kubeconfig file and point to the Kube API server
+      aws eks update-kubeconfig --name basic-eks --region us-east-1
+      
+      # Verify you are connected to EKS cluster
+      kubectl get pods --all-namespaces
+      ```
+      {{% notice warning %}}
+   If the pods cannot be listed, <span style="color: red;">**DO NOT PROCEED**</span>. Please reach out to AWS Event Staff or confirm the last few steps.
+   {{% /notice %}}
 
-# Install yq for yaml processing
-echo 'yq() {
-docker run --rm -i -v "${PWD}":/workdir mikefarah/yq yq "$@"
-}' | tee -a ~/.bashrc && source ~/.bashrc
-
-# Verify the binaries are in the path and executable
-for command in jq aws
-do
-  which $command &>/dev/null && echo "$command in path" || echo "$command NOT FOUND"
-done
-
-# Remove existing credentials file.
-rm -vf ${HOME}/.aws/credentials
-
-# Set the ACCOUNT_ID and the region to work with our desired region
-export AWS_REGION=$(curl -s 169.254.169.254/latest/dynamic/instance-identity/document | jq -r '.region')
-test -n "$AWS_REGION" && echo AWS_REGION is "$AWS_REGION" || echo AWS_REGION is not set
-
-# Configure .bash_profile
-export ACCOUNT_ID=$(aws sts get-caller-identity --output text --query Account)
-echo "export ACCOUNT_ID=${ACCOUNT_ID}" | tee -a ~/.bash_profile
-echo "export AWS_REGION=${AWS_REGION}" |
-tee -a ~/.bash_profile
-aws configure set default.region ${AWS_REGION}
-aws configure get default.region
-
-# Validate that our IAM role is valid.
-aws sts get-caller-identity --query Arn | grep Harness-Workshop-Admin -q && echo "IAM role valid" || echo "IAM role NOT valid"
-```
-
-{{% notice warning %}}
-If the IAM role is not valid, <span style="color: red;">**DO NOT PROCEED**</span>. Go back and confirm the steps on this page.
-{{% /notice %}}
