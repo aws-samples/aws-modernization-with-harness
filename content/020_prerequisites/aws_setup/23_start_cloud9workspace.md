@@ -6,9 +6,9 @@ weight: 18
 
 # Create a Workspace
 
-[AWS Cloud9](https://aws.amazon.com/cloud9/) is a cloud-based integrated development environment (IDE) that Let’s you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes prepackaged with essential tools for popular programming languages, including JavaScript, Python, PHP, and more, so you don’t need to install files or configure your laptop for this workshop.
+[AWS Cloud9](https://aws.amazon.com/cloud9/) is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes prepackaged with essential tools for popular programming languages, including JavaScript, Python, PHP, and more, so you don’t need to install files or configure your laptop for this workshop.
 
-We will use Amazon Cloud9 to access our AWS account via the AWS CLI in this Workshop.  There are a few steps to complete to set this up
+We will use Amazon Cloud9 to access our AWS accounts via the AWS CLI in this Workshop.  There are a few steps to complete to set this up
 
 1. Create a new Cloud9 IDE environment
 2. Create an IAM role for your workspace
@@ -20,13 +20,13 @@ We will use Amazon Cloud9 to access our AWS account via the AWS CLI in this Work
 
 1 . Within the AWS console, use the region drop list to select **us-east-1 (N. Virginia)**.  This will ensure the workshop script provisions the resources in this same region..
 
-2 . Navigate to the [cloud9 console](https://console.aws.amazon.com/cloud9/home) or just search for it under the **AWS console services** menu.
+2 . Navigate to the [Cloud9 console](https://console.aws.amazon.com/cloud9/home) or just search for it under the **AWS console services** menu.
 
 3 . Click the **Create environment** button
 
 4 . For the name use `harness-workshop`, then click **Next step**
 
-5 . Select the default instance type **t3.medium**
+5 . Select the default instance type **t3.micro**
 
 6 . Leave all the other settings as default and click **Next step** followed by **Create environment**
 
