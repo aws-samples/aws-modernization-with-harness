@@ -16,4 +16,4 @@ Adding the EKS Cluster to Harness is simple. To create a new [Cloud Provider](ht
 
 ![EKS Connector Setup](/images/eks_cluster_cloud_provider.png)
 
-Once you click Next and Submit, your EKS Cluster is wired to Harness. 
+Once you click Submit, your EKS Cluster is wired to Harness. 

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS Modernization with Harness on Harness Modernization Workshop</title>
+    <link>/</link>
+    <description>Recent content in AWS Modernization with Harness on Harness Modernization Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1. Attending an AWS hosted event</title>
+      <link>/020_prerequisites/aws_setup/21_aws_event_setup.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/020_prerequisites/aws_setup/21_aws_event_setup.html</guid>
+      <description>Attending an AWS hosted event To complete this workshop, you will be provided with an AWS account via the AWS Event Engine service. A team hash will be provided to you by event staff.
+If you are currently logged in to an AWS Account, you can logout using this link
+ Create AWS Account 1 . Connect to the portal by clicking the button or browsing to https://dashboard.eventengine.run/. The following screen shows up.</description>
+    </item>
+    
+    <item>
+      <title>2. Running the workshop on your own</title>
+      <link>/020_prerequisites/aws_setup/22_aws_setup_your_own.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/020_prerequisites/aws_setup/22_aws_setup_your_own.html</guid>
+      <description>Running the workshop on your own Only complete this section if you are running the workshop on your own. If you are at an AWS hosted event (such as re:Invent, Kubecon, Immersion Day, etc), go to Start the workshop at an AWS event.
+  Your account must have the ability to create new IAM roles and scope other IAM permissions.
+ You are responsible for the cost of the AWS services used while running this workshop in your AWS account.</description>
+    </item>
+    
+    <item>
+      <title>3.1 Create a Workspace</title>
+      <link>/020_prerequisites/aws_setup/23_start_cloud9workspace.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/020_prerequisites/aws_setup/23_start_cloud9workspace.html</guid>
+      <description>Create a Workspace AWS Cloud9 is a cloud-based integrated development environment (IDE) that Let’s you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes prepackaged with essential tools for popular programming languages, including JavaScript, Python, PHP, and more, so you don’t need to install files or configure your laptop for this workshop.
+We will use Amazon Cloud9 to access our AWS account via the AWS CLI in this Workshop.</description>
+    </item>
+    
+    <item>
+      <title>3.2 Create IAM role</title>
+      <link>/020_prerequisites/aws_setup/25_create_iam_role.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/020_prerequisites/aws_setup/25_create_iam_role.html</guid>
+      <description>Create an IAM role for your workspace Starting from here, when you see command to be entered such as below, you will enter these commands into Cloud9 IDE. You can use the Copy to clipboard feature (right hand upper corner) to simply copy and paste into Cloud9. In order to paste, you can use Ctrl + V for Windows or Command + V for Mac.
+  Follow this deep link to create an IAM role with Administrator access.</description>
+    </item>
+    
+    <item>
+      <title>5.1 Why Canary</title>
+      <link>/030_automated_canary/canary-lab/51_why_canary.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/030_automated_canary/canary-lab/51_why_canary.html</guid>
+      <description>Why a Canary Deployment in EKS? Harness and AWS are presenting this workshop to demonstrate how easy it is to quickly and reliably create a canary deployment. Through the course of this workshop, you will follow our instructor and use your Harness and AWS accounts to dive into the features of Harness and see how it revolutionizes the CICD world. There is no prior experience necessary as we will showcase how easy our platform is to use.</description>
+    </item>
+    
+    <item>
+      <title>6.1 Fork Workshop Repo</title>
+      <link>/030_automated_canary/lab-setup/61_fork_repo.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/030_automated_canary/lab-setup/61_fork_repo.html</guid>
+      <description>Fork and Add Workshop GitHub Repository to Harness Fork this GitHub Repository into your own account. When referring to the git configuration YAMLs, please refer to your Forked repository. While logged into GitHub, visit https://github.com/ravilach/harness-canary-workshop and click Fork.
+Adding your newly forked repository will allow for workshop assets to be used in Harness.
+Setup -&amp;gt; Connectors -&amp;gt; Source Repo Providers + Add Source Repo Provider
+ Name: AWS Workshop URL: https://github.</description>
+    </item>
+    
+    <item>
+      <title>8.1 Canary Application</title>
+      <link>/030_automated_canary/lab-working/81_canary_application.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/030_automated_canary/lab-working/81_canary_application.html</guid>
+      <description>Define Sample Application Similar to deploying Prometheus, create a new Harness Service.
+Setup -&amp;gt; AWS Canary -&amp;gt; Services + Add Service
+ Name: Sample App Deployment Type: Kubernetes  Hit Submit. Now can add an artifact Source in the Service Overview Section.
+ Source Server: Harness Docker Hub [public Docker Hub] Docker Image Name: harness/cv-demo  Once you hit Submit, before importing the YAMLs in, one modification is needed.</description>
+    </item>
+    
+    <item>
+      <title>Foreword</title>
+      <link>/010_introduction/10_foreword.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/010_introduction/10_foreword.html</guid>
+      <description>How did we get here? It is 2am on a Saturday morning, your dinner is cold because you have been on a bridge call with the Operations and Engineering teams (now jointly called DevOps) since 7pm trying to roll back the changes applied in the latest update. There are a number of items that need to be rolled back to get to the previously working state but because there is no clear understanding of all the changes that occurred, no one is comfortable rolling back and now you are waiting on a new build to roll forward.</description>
+    </item>
+    
+    <item>
+      <title>3.3 Attach IAM Role</title>
+      <link>/020_prerequisites/aws_setup/26_attach_iam_role.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/020_prerequisites/aws_setup/26_attach_iam_role.html</guid>
+      <description> Attach the IAM role to your Workspace  Follow this deep link to find your Cloud9 EC2 instance
+ Select the instance, then choose Actions / Security / Modify IAM role
+ Choose Harness-Workshop-Admin from the IAM Role drop down, and select Save
+  </description>
+    </item>
+    
+    <item>
+      <title>Deployments without worry</title>
+      <link>/010_introduction/12_problem_to_solve.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/010_introduction/12_problem_to_solve.html</guid>
+      <description>Deploy without worry Deployments with Kubernetes? Kubernetes (k8s) is a container orchestration platform allowing organizations to scale their services and workloads quickly. If you are working with containers or microservices, k8s may be a great use case for you. Kubenetes deployments are container image deployments which target k8s-based environments.
+Amazon has released a managed k8s service called Elastic Kubernetes Service (EKS). Amazon EKS helps you provide highly-available and secure clusters and automates key tasks such as patching, node provisioning, and updates.</description>
+    </item>
+    
+    <item>
+      <title>3.4 Configure workshop specific requirements</title>
+      <link>/020_prerequisites/aws_setup/27_config_workshop_req.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/020_prerequisites/aws_setup/27_config_workshop_req.html</guid>
+      <description>Configure workspace for Harness Workshop Cloud9 normally manages IAM credentials dynamically. This isn&amp;rsquo;t currently compatible with the EKS IAM authentication, so we will disable it and rely on the IAM role instead.
+  Return to your workspace and click the gear icon (in top right corner), or click to open a new tab and choose &amp;ldquo;Open Preferences&amp;rdquo;
+ Select AWS SETTINGS and turn off AWS managed temporary credentials</description>
+    </item>
+    
+    <item>
+      <title>What is Harness?</title>
+      <link>/010_introduction/14_harness.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/010_introduction/14_harness.html</guid>
+      <description>What is Harness? Harness is the industry’s first Continuous Delivery-as-a-Service platform that enables software changes of all types to reach production environments in a safe, quick and sustainable way. Harness helps accelerate cloud adoption and cloud migration activities while also enabling advanced deployment patterns and developer self-service. Harness simplifies the software delivery process, abstracting away the complexities of new technologies, making it easy for customers to automate the CI/CD process.</description>
+    </item>
+    
+    <item>
+      <title>5.2 Important Components</title>
+      <link>/030_automated_canary/canary-lab/52_important_components.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/030_automated_canary/canary-lab/52_important_components.html</guid>
+      <description> Important components The following are the important components of this lab.
+ A GitHub Account. If you don&amp;rsquo;t have one, you can sign up here A fork of the Harness Canary Workshop repo  </description>
+    </item>
+    
+    <item>
+      <title>6.2 Create Harness Application</title>
+      <link>/030_automated_canary/lab-setup/62_create_harness_app.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/030_automated_canary/lab-setup/62_create_harness_app.html</guid>
+      <description>Create a Harness Application Harness Applications are the lifeblood of the CD Abstraction Model. The Harness Application will house everything needed to deploy.
+To create a Harness Application,
+Setup -&amp;gt; Applications + Add Application
+ Name: AWS Canary Lab  Once you hit Submit, a blank Application is there.</description>
+    </item>
+    
+    <item>
+      <title>8.2 Automated Canary</title>
+      <link>/030_automated_canary/lab-working/82_automated_canary.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/030_automated_canary/lab-working/82_automated_canary.html</guid>
+      <description>Automated Canary Analysis With all of the CD Abstraction pieces out of the way, now it is time to define the Workflow which will power the Canary analysis.
+Create a new Workflow for the Sample App.
+Setup -&amp;gt; AWS Canary Lab -&amp;gt; Workflows + Add Workflow
+ Name: Sample App Canary Workflow Type: Canary Deployment Environment: The EKS Cluster  Once you hit Submit, can add a canary phase under “Deployment Phases” with + Add Phase</description>
+    </item>
+    
+    <item>
+      <title>6.3 Create Harness Environment</title>
+      <link>/030_automated_canary/lab-setup/63_create_harness_environment.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/030_automated_canary/lab-setup/63_create_harness_environment.html</guid>
+      <description>Create a Harness Environment Harness Environments are where you are going to deploy to.
+Setup -&amp;gt; AWS Canary Lab -&amp;gt; Environments + Add Environment
+ Name: The EKS Cluster Type: Non-Production  Once Created, define the Infrastructure Definition. You can have multiple clusters here but since the example is only using one, one will be define.
+Hit Submit and now you are wired up to deploy to your EKS Cluster.</description>
+    </item>
+    
+    <item>
+      <title>8.3 Deploy your Canary</title>
+      <link>/030_automated_canary/lab-working/83_automated_canary_release.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/030_automated_canary/lab-working/83_automated_canary_release.html</guid>
+      <description>Deploy Your Canary It is now time to deploy your application and enjoy safety of an automated canary analysis.
+The sample application has a stable and unstable version to deploy for demonstration. To toggle between the two, will take advantage of Harness Workflow Variables.
+Back in the Application, add two Workflow Variables.
+Setup -&amp;gt; AWS Canary Lab -&amp;gt; Workflows -&amp;gt; Sample App Canary
+On the bottom right, click on the “Workflow Variables” pencil icon.</description>
+    </item>
+    
+    <item>
+      <title>4.1 Delegate Configuration</title>
+      <link>/020_prerequisites/harness_setup/41_delegate_configuration.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/020_prerequisites/harness_setup/41_delegate_configuration.html</guid>
+      <description>Harness Kubernetes Delegate Install The Harness Delegate is a scalable worker node that can be deployed as a linux process on an EC2 instance, an ECS task, or to k8s via a manifest or helm chart. For this lab we will be using a k8s manifest. This is the only Harness software that needs to be installed by the customer. All other Harness services are provided by Harness as a SaaS provider.</description>
+    </item>
+    
+    <item>
+      <title>4.2 Connecting to EKS</title>
+      <link>/020_prerequisites/harness_setup/42_eks_connect.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/020_prerequisites/harness_setup/42_eks_connect.html</guid>
+      <description>Adding EKS Cluster to Harness Adding the EKS Cluster to Harness is simple. To create a new Cloud Provider which represents the EKS Cluster,
+Setup -&amp;gt; Cloud Providers + Add Cloud Provider -&amp;gt; Kubernetes Cluster
+ Name: My EKS Cluster Cluster Details: Inherit from Selected Delegate Delegate: eks-delegate  Once you click Next and Submit, your EKS Cluster is wired to Harness.</description>
+    </item>
+    
+    <item>
+      <title>7.1 Metrics Server Install</title>
+      <link>/030_automated_canary/verification_setup/71_k8s_metrics_server.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/030_automated_canary/verification_setup/71_k8s_metrics_server.html</guid>
+      <description> Kubernetes Metrics Server Installing the Metrics Server can be done in one kubectl command.
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml </description>
+    </item>
+    
+    <item>
+      <title>7.2 Prometheus Installation</title>
+      <link>/030_automated_canary/verification_setup/72_prometheus_install.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/030_automated_canary/verification_setup/72_prometheus_install.html</guid>
+      <description>Prometheus Installation Harness can facilitate the installation of Prometheus. For this workshop, the Prometheus deployables have been configured to be accessible by the workloads in the EKS Cluster in the Git Repository.
+Setup -&amp;gt; AWS Canary Lab -&amp;gt; Services + Add Service
+ Name: Install Prometheus Deployment Type: Kubernetes  Once you hit Submit, click on three ellipses on the right hand side to Link Remote Manifests.
+Enter the following information:</description>
+    </item>
+    
+    <item>
+      <title>7.3 Prometheus Deployment</title>
+      <link>/030_automated_canary/verification_setup/73_prometheus_deployment.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/030_automated_canary/verification_setup/73_prometheus_deployment.html</guid>
+      <description>Prometheus Deployment To deploy something in Harness, defining a Harness Workflow will define the steps on the deployment will be achieved.
+Setup-&amp;gt; AWS Canary Lab -&amp;gt; Workflows + Add Workflow
+ Name: Deploy Prometheus Workflow Type: Rolling Deployment Environment: The EKS Cluster Service: Install Prometheus Infrastructure Definition: My EKS Cluster  Click Submit and you are ready to deploy.
+In the upper right hand corner of the Workflow, click Deploy.</description>
+    </item>
+    
+    <item>
+      <title>7.4 Connecting Prometheus</title>
+      <link>/030_automated_canary/verification_setup/74_prometheus_connect.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/030_automated_canary/verification_setup/74_prometheus_connect.html</guid>
+      <description>Connecting Harness to Prometheus In order to connect Harness to Prometheus, you need the accessible URL endpoint. To grab the HTTP accessible address, run the following command.
+kubectl describe service prometheus-service Copy down the LoadBalancer Ingress address from the output of the kubectl command:
+a8241cbf8317f4c1ab5507fbce9d576c-671821569.us-east-2.elb.amazonaws.com
+You can navigate to the Prometheus UI to validate installation by adding port 8080 for example: https://a8241cbf8317f4c1ab5507fbce9d576c-671821569.us-east-2.elb.amazonaws.com:8080
+Add Prometheus as a Verification Provider To wire Prometheus to Harness, setup as a Verification Provider.</description>
+    </item>
+    
+  </channel>
+</rss>

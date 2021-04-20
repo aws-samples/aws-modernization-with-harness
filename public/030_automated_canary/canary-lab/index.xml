@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automated Canary on Harness Modernization Workshop</title>
+    <link>/030_automated_canary/canary-lab.html</link>
+    <description>Recent content in Automated Canary on Harness Modernization Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/030_automated_canary/canary-lab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5.1 Why Canary</title>
+      <link>/030_automated_canary/canary-lab/51_why_canary.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/030_automated_canary/canary-lab/51_why_canary.html</guid>
+      <description>Why a Canary Deployment in EKS? Harness and AWS are presenting this workshop to demonstrate how easy it is to quickly and reliably create a canary deployment. Through the course of this workshop, you will follow our instructor and use your Harness and AWS accounts to dive into the features of Harness and see how it revolutionizes the CICD world. There is no prior experience necessary as we will showcase how easy our platform is to use.</description>
+    </item>
+    
+    <item>
+      <title>5.2 Important Components</title>
+      <link>/030_automated_canary/canary-lab/52_important_components.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/030_automated_canary/canary-lab/52_important_components.html</guid>
+      <description> Important components The following are the important components of this lab.
+ A GitHub Account. If you don&amp;rsquo;t have one, you can sign up here A fork of the Harness Canary Workshop repo  </description>
+    </item>
+    
+  </channel>
+</rss>

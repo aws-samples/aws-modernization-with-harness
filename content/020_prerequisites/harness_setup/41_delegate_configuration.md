@@ -18,6 +18,7 @@ Log into your Harness environment with your browser at the following URL:  https
 
 **Setup -> Harness Delegates  then Click on Install Delegate** 
 
+* **Download Type:** ***"Kubernetes YAML"***
 * **Name:** ***“eks-delegate”***
 
 ![Harness Delegate Setup](/images/harness_delegate_eks.gif)
@@ -29,7 +30,15 @@ the command:
 
     tar -xvf harness-delegate-kubernetes.tar.gz
 
-Inside the expanded tar folder, there is a README.txt which has several useful commands. Run the following command against the yaml file in the folder:
+Inside the expanded tar folder, there is a README.txt which has several useful commands. Run the following commands against the yaml file in the folder:
+    
+    sed -i 's/memory: "8Gi"/memory: "2Gi"/g' harness-delegate.yaml
+
+    sed -i 's/cpu: "1"/cpu: ".25"/g' harness-delegate.yaml
+
+{{% notice note %}}
+The Harness Delegate is sized for production use cases, the above commands are to set it to minimum requirements for the workshop
+{{% /notice %}}
 
     kubectl apply -f harness-delegate.yaml
 
