@@ -11,19 +11,19 @@ Similar to deploying Prometheus, create a new Harness Service.
 
 **Setup -> AWS Canary -> Services + Add Service**
 
-* Name: Sample App
-* Deployment Type: Kubernetes
+* **Name:** ***Sample App***
+* **Deployment Type:** ***Kubernetes***
 
 ![Add Application Service](/images/new_service.png)
 
-Hit Submit. Now can add an artifact Source in the Service Overview Section. 
+Click **Submit**. Now click **+Add Artifact Source** and choose **Docker Registry** in the Service Overview Section. 
 
-* Source Server: Harness Docker Hub [public Docker Hub]
-* Docker Image Name: harness/cv-demo
+* **Source Server:** ***Harness Docker Hub*** [public Docker Hub]
+* **Docker Image Name:** ***harness/cv-demo***
 
 ![Add Artifact Source](/images/artifact_source.png)
  
-Once you hit Submit, before importing the YAMLs in, one modification is needed. 
+Once you click **Submit**, before importing the YAMLs in, one modification is needed. 
 
 In the Forked Sample Application Folder GitHub, make modification to the *sample_application/values.yaml*. The change needed is to configure Prometheus which you installed  as an Allowed Origin. 
 
@@ -32,12 +32,12 @@ In the Forked Sample Application Folder GitHub, make modification to the *sample
 
 ![Commit the change to git](/images/allowed_origins_commit_2.png)
 
-Commit the Change to your Fork
+**Commit** the Change to your Fork
 
 ![Committed change](/images/allowed_origins_commit.png)
 
 
-After the Commit, Back in the Sample App, Link to Remote Manifests. 
+After the Commit, change back to the Sample App to **Link Remote Manifests**. 
 
 **Setup -> AWS Canary Lab -> Services -> Sample App**
 
@@ -46,12 +46,12 @@ After the Commit, Back in the Sample App, Link to Remote Manifests.
 
 Then enter the Remote Manifest Details
 
-* Manifest Format: Kubernetes Resource
-* Source Repository: AWS Workshop
-* Branch:main
-* File/Folder: sample_application
+* **Manifest Format:** ***Kubernetes Resource***
+* **Source Repository:** ***AWS Workshop***
+* **Branch:** ***main***
+* **File/Folder:** ***sample_application***
 
 ![Configure Sample App Remote Manifest](/images/sample_app_remote_manifest.png)
 
-Click Submit and you are ready to configure the canary. 
+Click **Submit** and you are ready to configure the canary. 
 

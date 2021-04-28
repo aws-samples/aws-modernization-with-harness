@@ -19,12 +19,16 @@ To deploy something in Harness, defining a Harness Workflow will define the step
 
 ![Configure Prometheus Deployment Workflow](/images/prometheus_workflow.png)
 
-Click Submit and you are ready to deploy.
+Click **Submit** and you are ready to deploy.
 
-In the upper right hand corner of the Workflow, click Deploy.  
+In the upper right hand corner of the Workflow, click **Deploy**.  
+
+![Prometheus Workflow](/images/prometheus_deploy.png)
+
+add a Note if you like for this deployment...
 
 ![Deploy Prometheus Service](/images/new_deployment.png)
 
-Hit Submit and Prometheus will be deployed. 
+click **Submit** and Prometheus will be deployed. You will be taken to the Deployments view to observe the deployment of your Prometheus service.
 
 ![Deploy Prometheus](/images/deployment_prometheus.png)

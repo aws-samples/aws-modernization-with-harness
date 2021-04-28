@@ -32,6 +32,6 @@ To wire Prometheus to Harness, setup as a Verification Provider.
 
 ![Add Prometheus Verification Provider](/images/prometheus_provider.png)
 
-Click Submit and Prometheus will be wired to Harness.
+Click **Submit** and Prometheus will be wired to Harness.
 
 ![Prometheus Provider successfully created ](/images/prometheus_provider_completed.png)

@@ -17,6 +17,6 @@ To create a Harness Application,
 
 ![Add Application](/images/application.png)
 
-Once you hit Submit, a blank Application is there. 
+Once you hit **Submit**, a blank Application is created 
 
 ![Application Setup](/images/application_setup.png)
