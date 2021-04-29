@@ -18,6 +18,7 @@ Log into your Harness environment with your browser at the following URL:  https
 
 **Setup -> Harness Delegates  then Click on Install Delegate** 
 
+* **Download Type:** ***"Kubernetes YAML"***
 * **Name:** ***“eks-delegate”***
 
 ![Harness Delegate Setup](/images/harness_delegate_eks.gif)
@@ -29,15 +30,33 @@ the command:
 
     tar -xvf harness-delegate-kubernetes.tar.gz
 
-Inside the expanded tar folder, there is a README.txt which has several useful commands. Run the following command against the yaml file in the folder:
+change to the 'harness-delegate-kubernetes' directory:
+
+    cd harness-delegate-kubernetes
+
+Inside the expanded tar folder, there is a README.txt which has several useful commands. Run the following commands against the yaml file in the folder:
+    
+    sed -i 's/memory: "8Gi"/memory: "2Gi"/g' harness-delegate.yaml
+
+    sed -i 's/cpu: "1"/cpu: ".25"/g' harness-delegate.yaml
+
+{{% notice note %}}
+The Harness Delegate is sized for production use cases, the above commands are to set it to minimum requirements for the workshop
+{{% /notice %}}
 
     kubectl apply -f harness-delegate.yaml
 
-After a few moments, the Delegate will be available via the Harness UI.
+Monitor the pods to confirm they are running
 
-{{% notice note %}}
-The Implicit Selectors in the image below are automatically provided based on the deployment of the Delegate and can be used for [scoping of the Delegate](https://docs.harness.io/article/hw56f9nz7q-scope-delegates-to-harness-components-and-commands) to specific resources, applications, clusters, etc..  Additionally one can add Custom Selectors for the same purpose.
-{{% /notice %}}
+    watch kubectl get all -n harness-delegate
+
+![kubectl get all -n harness-delegate](/images/delegate_watch.png)
+
+Type CTRL-C to exit and after a few moments, the Delegate will be available via the Harness UI.
 
 ![delegate UI](/images/delegate_overview.png)
- 
+
+{{% notice note %}}
+The Implicit Selectors in the image above are automatically provided based on the deployment of the Delegate and can be used for [scoping of the Delegate](https://docs.harness.io/article/hw56f9nz7q-scope-delegates-to-harness-components-and-commands) to specific resources, applications, clusters, etc..  Additionally one can add Custom Selectors for the same purpose.
+{{% /notice %}}
+

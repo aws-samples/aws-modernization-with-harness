@@ -16,18 +16,18 @@ Harness can facilitate the installation of Prometheus. For this workshop, the Pr
 
 ![Add Prometheus Service](/images/prometheus_service.png)
 
-Once you hit Submit, click on three ellipses on the right hand side to Link Remote Manifests. 
+Once you click **Submit**, click on **ellipses** on the right hand side to **Link Remote Manifests**. 
 
 ![Setup Prometheus Service](/images/prometheus_service_setup.png)
 
 Enter the following information:
 
-* **Manifest Format:** ***Kubernetes Specs***
-* **Source Repository:** ***AWS Workshop***
+* **Manifest Format:** ***Kubernetes Resource Specs in YAML format***
+* **Source Repository:** ***AWS Workshop*** (this is the repo we added earlier)
 * **Branch:** ***master***
 * **File/Folder:** ***prometheus***
 
 ![Configure Remote Manifest](/images/remote_manifest.png)
 
-Click Submit and you are ready to deploy Prometheus. 
+Click **Submit** and you are ready to deploy Prometheus. 
 
