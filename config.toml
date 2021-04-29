@@ -17,7 +17,7 @@ enableEmoji = true
   # Author of the site, will be used in meta information
   author = "Ravi Lachhman, Peter Hack, Drew Oetzel"
   # Description of the site, will be used in meta information
-  description = "Harness EKS Canary Deployment Moderrnization Workshop"
+  description = "Harness EKS Canary Deployment Modernization Workshop"
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = true
   # Disable search function. It will hide search bar
