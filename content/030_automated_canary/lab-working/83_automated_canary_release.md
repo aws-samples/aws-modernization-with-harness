@@ -37,7 +37,7 @@ The last step is to define what happens after a successful Canary, which would b
 
 ![Add Workflow Phase](/images/sample_app_workflow_phase.png)
 
-Once you click **Submit**, your Workflow should look like this and you are ready to deploy.
+Click **Submit** and return from the Primary phase to the Sample App Canary workflow which should look like this.
 
 ![Completed Canary Workflow setup](/images/sample_app_workflow_primary.png)
 

@@ -16,7 +16,7 @@ Create a new Workflow for the Sample App.
 * **Workflow Type:** ***Canary Deployment***
 * **Environment:** ***The EKS Cluster***
 
-![Create Sample App Workflow](/images/sample_app_workflow.png)
+![Create Sample App Workflow](/images/sample_app_workflow.gif)
 
 Once you hit **Submit**, can add a canary phase under “Deployment Phases” with **+ Add Phase**
 
