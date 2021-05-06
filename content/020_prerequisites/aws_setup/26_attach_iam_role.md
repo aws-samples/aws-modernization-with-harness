@@ -1,6 +1,6 @@
 ---
 title: "3.2 Attach IAM Role"
-chapter: true
+chapter: false
 weight: 22
 ---
 

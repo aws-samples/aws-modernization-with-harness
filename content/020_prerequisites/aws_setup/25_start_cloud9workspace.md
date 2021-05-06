@@ -1,7 +1,8 @@
 ---
 title: "3.1 Create a Workspace"
-chapter: true
+chapter: false
 weight: 18
+nextPage: "27_config_workshop_req.html"
 ---
 
 # Create a Workspace

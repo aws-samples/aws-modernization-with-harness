@@ -4,12 +4,18 @@ chapter: true
 weight: 16
 ---
 
-# Running the workshop on your own
+# AWS Setup
 
 {{< marketo-script >}}
 
 {{% notice warning %}}
+This account will expire at the end of the workshop and all the resources created will be automatically de-provisioned. You will not be able to access this account after today.
+{{% /notice %}}
+
+{{% notice warning %}}
+
 Only complete this section if you are running the workshop on your own. If you are at an AWS hosted event (such as re:Invent, Kubecon, Immersion Day, etc), go to [Start the workshop at an AWS event](/20_prerequisites/12_aws_event_setup.html).
+
 {{% /notice %}}
 
 If you are unable to attend an AWS-hosted event, don't worry! You'll still be able to go through this workshop by yourself. To request AWS Credits, please click the [request AWS credit page](/020_prerequisites/aws_setup/23_request_aws_credit.md). 
