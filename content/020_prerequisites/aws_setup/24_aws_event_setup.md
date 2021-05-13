@@ -3,10 +3,7 @@ title: "1. Attending an AWS hosted event"
 chapter: false
 weight: 14
 hidden: true
-next: "25_start_cloud9workspace.html"
-next: 25_start_cloud9workspace.html
-next: /aws_setup/25_start_cloud9workspace.html
-next: aws_setup/25_start_cloud9workspace.html
+disableNextPrev: true
 ---
 
 ## Attending an AWS hosted event
@@ -38,3 +35,5 @@ Please select **US East (N.Virginia)** in the top right corner.
 {{% notice warning %}}
 This account will expire at the end of the workshop and all the resources created will be automatically de-provisioned. You will not be able to access this account after today.
 {{% /notice %}}
+
+<CENTER><a href="/020_prerequisites/aws_setup/25_start_cloud9workspace.html" class="credit-btn">NEXT</a></CENTER>
