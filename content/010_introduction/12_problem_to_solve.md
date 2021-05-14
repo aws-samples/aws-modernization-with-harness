@@ -2,7 +2,7 @@
 title: "Deployments without worry"
 chapter: true
 draft: false
-weight: 22
+weight: 12
 ---
 # Deploy without worry
 
