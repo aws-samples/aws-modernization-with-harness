@@ -1,7 +1,7 @@
 ---
 title: "Foreword"
 chapter: true
-weight: 20
+weight: 10
 ---
 
 # How did we get here?

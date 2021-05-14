@@ -1,7 +1,7 @@
 ---
 title: "What is Harness?"
 chapter: true
-weight: 24
+weight: 14
 ---
 
 # What is Harness?
