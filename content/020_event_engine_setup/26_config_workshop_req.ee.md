@@ -91,4 +91,4 @@ the EKS IAM authentication, so we will disable it and rely on the IAM role inste
 
 If you have completed the above instructions, please click the button below to move to the Harness Setup section!
 
-<CENTER><a href="../040_harness_setup.html" class="credit-btn">Move to Harness Setup</a></CENTER>
+<CENTER><a href="/040_harness_setup.html" class="credit-btn">Move to Harness Setup</a></CENTER>
