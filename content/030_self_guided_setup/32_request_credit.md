@@ -23,7 +23,7 @@ If you're still having difficulty, please contact ajonsso@amazon.com.
 <table class="credit" style="width:100%">
 <tr class="credit">
   <td class="credit" style="width:40%"> 
-      <a href="https://aws.amazon.com/marketplace" target="_blank"><img src="/images/20_prerequisites/available-in-awsmp-badge.png"></a>
+      <a href="https://aws.amazon.com/marketplace/pp/B07PZY3369" target="_blank"><img src="/images/20_prerequisites/awsmp-harness-badge.png"></a>
   </td>
 
   <td class="credit" style="width:60%">
