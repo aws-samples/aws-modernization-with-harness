@@ -2,7 +2,6 @@
 title: "4. Configure workshop specific requirements"
 chapter: true
 weight: 16
-disableNextPrev: true
 ---
 
 ## Configure Workspace
@@ -89,6 +88,4 @@ the EKS IAM authentication, so we will disable it and rely on the IAM role inste
    If the pods cannot be listed, <span style="color: red;">**DO NOT PROCEED**</span>. Please reach out to AWS Event Staff or confirm the last few steps. 
    {{% /notice %}}
 
-If you have completed the above instructions, please click the button below to move to the Harness Setup section!
-
-<CENTER><a href="/040_harness_setup.html" class="credit-btn">Move to Harness Setup</a></CENTER>
+If you have completed the above instructions, move onto the Harness Setup section!
