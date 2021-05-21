@@ -24,7 +24,7 @@ eksctl version
 ```sh
 # Creating an EKS cluster via eksctl
 eksctl create cluster \
---name simple-eks \
+--name basic-eks \
 --region us-east-1\
 --zones us-east-1a,us-east1b
 ```
