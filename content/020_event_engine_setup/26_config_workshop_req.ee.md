@@ -16,8 +16,6 @@ the EKS IAM authentication, so we will disable it and rely on the IAM role inste
 2. Select **AWS SETTINGS** and turn off **AWS managed temporary credentials**
 
 3. Close the Preferences tab
-   
-    ![Turn off temp credentials](/images/20_prerequisites/iamRoleWorkspace.gif)
 
 4. Copy and run (paste with **Ctrl+P** or **CMD+P**) the commands below.
 

@@ -24,7 +24,7 @@ Enter the following information:
 
 * **Manifest Format:** ***Kubernetes Resource Specs in YAML format***
 * **Source Repository:** ***AWS Workshop*** (this is the repo we added earlier)
-* **Branch:** ***master***
+* **Branch:** ***main***
 * **File/Folder:** ***prometheus***
 
 ![Configure Remote Manifest](/images/remote_manifest.png)
