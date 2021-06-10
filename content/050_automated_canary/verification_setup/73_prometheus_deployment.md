@@ -25,10 +25,10 @@ In the upper right hand corner of the Workflow, click **Deploy**.
 
 ![Prometheus Workflow](/images/prometheus_deploy.png)
 
-add a Note if you like for this deployment...
+Add a Note if you like for this deployment...
 
 ![Deploy Prometheus Service](/images/new_deployment.png)
 
-click **Submit** and Prometheus will be deployed. You will be taken to the Deployments view to observe the deployment of your Prometheus service.
+Click **Submit** and Prometheus will be deployed. You will be taken to the Deployments view to observe the deployment of your Prometheus service.
 
 ![Deploy Prometheus](/images/deployment_prometheus.png)

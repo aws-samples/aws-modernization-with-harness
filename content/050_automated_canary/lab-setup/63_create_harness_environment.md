@@ -16,7 +16,7 @@ Harness Environments are where you are going to deploy to.
 
 ![Add Environment](/images/eks_environment.png)
 
-Click **Submit**.  Once Created, select **Add Infrastructure Definition** to define an infrastructure definition for this environment. You can add multiple infrastructure definitiions but since the example is only using one, one will be all that is needed. 
+Click **Submit**.  Once created, select **Add Infrastructure Definition** to define an infrastructure definition for this environment. You can add multiple infrastructure definitions but since the example is only using one, one will be all that is needed. 
 
 ![Add Infrastructure Definition](/images/eks_infra_def.png)
 

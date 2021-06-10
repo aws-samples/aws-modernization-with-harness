@@ -6,7 +6,7 @@ weight: 30
 ---
 # Automated Canary Analysis 
 
-With all of the CD Abstraction pieces out of the way, now it is time to define the Workflow which will power the Canary analysis.
+With all the CD Abstraction pieces out of the way, now it is time to define the **Workflow** which will power the Canary analysis.
 
 Create a new Workflow for the Sample App. 
 
@@ -16,7 +16,7 @@ Create a new Workflow for the Sample App.
 * **Workflow Type:** ***Canary Deployment***
 * **Environment:** ***The EKS Cluster***
 
-![Create Sample App Workflow](/images/sample_app_workflow.gif)
+![Create Sample App Workflow](/images/sample_app_workflow.png)
 
 Once you hit **Submit**, can add a canary phase under “Deployment Phases” with **+ Add Phase**
 

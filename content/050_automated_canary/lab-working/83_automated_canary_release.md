@@ -7,7 +7,7 @@ weight: 40
 
 # Deploy Your Canary
 
-It is now time to deploy your application and enjoy safety of an automated canary analysis. 
+It is now time to deploy your application and enjoy the safety of an automated canary analysis. 
 
 The sample application has a stable and unstable version to deploy for demonstration. To toggle between the two, will take advantage of Harness Workflow Variables.
 

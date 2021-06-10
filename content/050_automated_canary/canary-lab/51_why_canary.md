@@ -6,7 +6,7 @@ weight: 20
 ---
 ## Why a Canary Deployment in EKS?
 
-Harness and AWS are presenting this workshop to demonstrate how easy it is to quickly and reliably create a canary deployment. Through the course of this workshop, you will follow our instructor and use your Harness and AWS accounts to dive into the features of Harness and see how it revolutionizes the CICD world. There is no prior experience necessary as we will showcase how easy our platform is to use. You will learn how to use Harness to build out a pipeline and deploy applications without the need for manual scripts.
+Harness and AWS are presenting this workshop to demonstrate how easy it is to quickly and reliably create a canary deployment. Through the course of this workshop, you will learn how to use Harness and your AWS account, to dive into the features of Harness and see how it revolutionizes the CICD world. There is no prior experience necessary as we will showcase how easy our platform is to use. You will learn how to use Harness to build out a pipeline and deploy applications without the need for manual scripts.
 
 You’ll have the opportunity to:
 
