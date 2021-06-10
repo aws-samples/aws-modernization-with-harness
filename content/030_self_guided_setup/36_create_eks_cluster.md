@@ -1,5 +1,5 @@
 ---
-title: "4. Create an EKS Cluster"
+title: "5. Create an EKS Cluster"
 chapter: true
 weight: 16
 ---

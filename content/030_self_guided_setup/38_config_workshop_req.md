@@ -1,5 +1,5 @@
 ---
-title: "5. Configure workshop specific requirements"
+title: "6. Configure workshop specific requirements"
 chapter: true
 weight: 18
 ---
