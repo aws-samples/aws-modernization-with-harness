@@ -40,7 +40,7 @@ Select **Prometheus** and then click **Next**. This is where the Prometheus quer
 * **Metric Name:** ***normal_call***
 * **Metric Type:** ***Throughput***
 * **Group Name:** ***custom***
-* **Query:** ***io_harness_custom_metric_normal_call{kubernetes_pod_name="$hostName"}***
+* **Query:** ```io_harness_custom_metric_normal_call{kubernetes_pod_name="$hostName"}```
 
 ![Configure Prometheus CV](/images/sample_app_configure_prometheus.png)
 
@@ -49,7 +49,8 @@ Add another metric for Errors with **+ Add**
 * **Metric Name:** ***error_call***
 * **Metric Type:** ***Error***
 * **Group Name:** ***custom***
-* **Query:** ***io_harness_custom_metric_error_call{kubernetes_pod_name="$hostName"}***
+* **Query:** ```io_harness_custom_metric_error_call{kubernetes_pod_name="$hostName"}```
+
 
 ![Configure Prometheus metric](/images/sample_app_configure_prometheus_metric.png)
 
